@@ -1,3 +1,5 @@
-import { sayHello } from './demo';
+import { newGameBoard, play } from './bingo-functions';
+import { bingoButtonElement, buttonPlayAgainElement } from './dom';
 
-sayHello();
+bingoButtonElement.addEventListener('click', play);
+buttonPlayAgainElement.addEventListener('click', newGameBoard);

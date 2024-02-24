@@ -1,6 +1,143 @@
-body {
-	margin: 0;
-	font-family: sans-serif;
-	background-color: #333;
-	/* background-image: url(../assets/images/sleep-cat.jpeg); */
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --border-color-player: rgb(17, 17, 92);
+    
+}
+body{
+    text-align: center;
+    font-size: 20px;
+}
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-game{
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+    
+}
+
+.bingo-board{
+    display: grid;
+    grid-template-columns: repeat(11,40px);
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 2px solid brown;
+    border-radius: 10px;
+    
+    
+
+}
+
+.bingo-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid aliceblue;
+    border-collapse:collapse;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    
+    
+}
+.user-pc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+@media (min-width: 768px) {
+    .user-pc{
+        flex-direction: row;
+       
+    }
+}
+.board-player{
+    display: grid;
+    grid-template-columns: repeat(5,50px);
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    justify-items: center;
+    
+   
+}
+
+.player-span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid aliceblue;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--border-color-player);
+  border-radius: 10px;
+}
+
+
+
+.player-number-marked{
+    background-color: rgb(71, 223, 71);
+}
+.pc-number-marked{
+    background-color: rgb(86, 167, 248);
+}
+.bingo-marked{
+    background-color: orange;
+}
+
+.bingo-winner{
+    color: rgb(0, 0, 0);
+    
+    font-size: 20px;
+    border-radius: 10px;
+    width: 200px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    
+}
+.player-win{
+    color: rgb(30, 184, 30) ;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pc-win{
+    color: rgb(86, 167, 248) ;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.bingo-button{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: brown;
+    border: 2px solid rgb(113, 21, 21);
+    color: white;
+}
+.play-again{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(233, 59, 207);
+    border: 2px solid rgb(157, 30, 138);
+    color: white;
+}
+.hide{
+    display: none;
 }
