@@ -1,6 +1,6 @@
 # Título del proyecto
 
-![Imagen del proyecto](https://raw.githubusercontent.com/BeatrizRodriguezReglero/bingo-vite-js/main/src/assets/images/bingo-principal.png)
+![Imagen del proyecto](https://github.com/BeatrizRodriguezReglero/bingo-vite-js/blob/main/src/assets/images/bingo-principal-1.png)
 
 ## Ejemplo en vivo
 
